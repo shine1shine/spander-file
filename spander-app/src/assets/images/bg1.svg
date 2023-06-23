@@ -1,0 +1,63 @@
+<svg
+  id="visual"
+  viewBox="0 0 900 600"
+  width="900"
+  height="600"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+>
+<rect x="0" y="0" width="900" height="600" fill="#001220">
+</rect><defs><linearGradient
+      id="grad1_0"
+      x1="33.3%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    ><stop offset="20%" stop-color="#7211f5" stop-opacity="1" /><stop
+        offset="80%"
+        stop-color="#7211f5"
+        stop-opacity="1"
+      /></linearGradient></defs><defs><linearGradient
+      id="grad1_1"
+      x1="33.3%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    ><stop offset="20%" stop-color="#7211f5" stop-opacity="1" /><stop
+        offset="80%"
+        stop-color="#001220"
+        stop-opacity="1"
+      /></linearGradient></defs><defs><linearGradient
+      id="grad2_0"
+      x1="0%"
+      y1="0%"
+      x2="66.7%"
+      y2="100%"
+    ><stop offset="20%" stop-color="#7211f5" stop-opacity="1" /><stop
+        offset="80%"
+        stop-color="#7211f5"
+        stop-opacity="1"
+      /></linearGradient></defs><defs><linearGradient
+      id="grad2_1"
+      x1="0%"
+      y1="0%"
+      x2="66.7%"
+      y2="100%"
+    ><stop offset="20%" stop-color="#001220" stop-opacity="1" /><stop
+        offset="80%"
+        stop-color="#7211f5"
+        stop-opacity="1"
+      /></linearGradient></defs><g transform="translate(900, 0)"><path
+      d="M0 108.2C-19 105.4 -38 102.6 -54.1 93.7C-70.1 84.7 -83.3 69.6 -91.8 53C-100.3 36.4 -104.2 18.2 -108.2 0L0 0Z"
+      fill="#003294"
+    /><path
+      d="M0 54.1C-9.5 52.7 -19 51.3 -27 46.8C-35.1 42.4 -41.6 34.8 -45.9 26.5C-50.2 18.2 -52.1 9.1 -54.1 0L0 0Z"
+      fill="#7211f5"
+    /></g><g transform="translate(0, 600)"><path
+      d="M0 -108.2C20.2 -106.1 40.3 -103.9 54.1 -93.7C67.8 -83.4 75.2 -65 83.1 -48C91.1 -31 99.6 -15.5 108.2 0L0 0Z"
+      fill="#003294"
+    /><path
+      d="M0 -54.1C10.1 -53 20.2 -52 27 -46.8C33.9 -41.7 37.6 -32.5 41.6 -24C45.5 -15.5 49.8 -7.8 54.1 0L0 0Z"
+      fill="#7211f5"
+    /></g></svg>

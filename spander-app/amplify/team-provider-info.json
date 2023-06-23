@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify1ccd3a58fcfd4-staging-113616-authRole",
+      "UnauthRoleArn": "arn:aws:iam::442914231132:role/amplify-amplify1ccd3a58fcfd4-staging-113616-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::442914231132:role/amplify-amplify1ccd3a58fcfd4-staging-113616-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-amplify1ccd3a58fcfd4-staging-113616-deployment",
+      "UnauthRoleName": "amplify-amplify1ccd3a58fcfd4-staging-113616-unauthRole",
+      "StackName": "amplify-amplify1ccd3a58fcfd4-staging-113616",
+      "StackId": "arn:aws:cloudformation:eu-west-3:442914231132:stack/amplify-amplify1ccd3a58fcfd4-staging-113616/b19a51a0-77b5-11ed-a79d-0eb3b7a400b0",
+      "AmplifyAppId": "d1s9i15ek9xhqe"
+    },
+    "categories": {
+      "function": {
+        "githubOAuth": {
+          "prodClientsecret": "6068caf079f4b3e85d6a29201ab75e7cc6045607",
+          "devClientsecret": "fb8ef5424ca852c035baa3e0febeeee3d7936775",
+          "testClientsecret": "05c41aac7d07e891dbd7cad2b17b1c5e6ec0f5ab",
+          "deploymentBucketName": "amplify-amplify1ccd3a58fcfd4-staging-113616-deployment",
+          "s3Key": "amplify-builds/githubOAuth-6c67432b74446e505938-build.zip"
+        },
+        "getOAuthApi": {}
+      },
+      "api": {
+        "githubOAuthApi": {}
+      }
+    }
+  }
+}

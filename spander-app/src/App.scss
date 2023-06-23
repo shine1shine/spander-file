@@ -1,0 +1,268 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/bootstrap-utilities';
+
+:root {
+    --bs-pagination-active-bg: #6610f2 !important;
+    --bs-pagination-color    : #6610f2 !important;
+    --bs-primary             : #6610f2 !important;
+    --bs-primary-rgb         : 102, 16, 242 !important;
+}
+
+$green     : #198754;
+$primary   : #6610f2;
+$secondary : #6C757D;
+$theme-colors:("primary" : #6610F2,
+    "dark":#212529,
+);
+
+
+
+.btn-purple {
+    background-color: $primary;
+    border          : 1px solid #6610F2;
+    padding         : 4px 8px;
+    border-radius   : 4px;
+    color           : #fff;
+}
+
+
+//##########################  blues
+@each $color,
+$value in $blues {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
+
+//########################## Purples
+@each $color,
+$value in $purples {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
+
+
+
+//########################## greens
+@each $color,
+$value in $greens {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
+
+
+//########################## grays
+@each $color,
+$value in $grays {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+
+    .text-#{$color} {
+        color: $value !important;
+    }
+}
+
+
+
+//  main
+@import "Main";
+@import '~bootstrap/scss/bootstrap';
+
+
+// ################ fonts
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Light.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Light.woff') format('woff');
+    font-weight : 300;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Thin.woff') format('woff');
+    font-weight : 100;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Black.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Black.woff') format('woff');
+    font-weight : 900;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Medium.woff') format('woff');
+    font-weight : 500;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Italic.woff') format('woff');
+    font-weight : normal;
+    font-style  : italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../src/assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../src/assets/fonts/Roboto-Bold.woff') format('woff');
+    font-weight : bold;
+    font-style  : normal;
+    font-display: swap;
+}
+
+/* Spander React Link Style */
+.spn-link,
+a#basic-nav-dropdown {
+    @extend .nav-link;
+    color: #333333;
+}
+
+.spn-link {
+    &:hover {
+        color      : $primary;
+        font-weight: 700;
+
+    }
+}
+
+
+
+
+.custom-checkbox {
+    display      : inline-flex;
+    align-items  : center;
+    position     : relative;
+    font-size    : 14px;
+    cursor       : pointer;
+    border       : 1px solid #fff;
+    border-radius: 2px;
+    width        : 13px;
+    height       : 13px;
+
+    span {
+        display        : flex !important;
+        justify-content: center !important;
+        align-items    : center !important;
+        height         : 100% !important;
+        width          : 100% !important;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        opacity : 0;
+        cursor  : pointer;
+        height  : 0;
+        width   : 0;
+    }
+
+    .checkmark {
+        background-image   : url(../src/assets/images/arrow.svg);
+        align-items        : center;
+        height             : 20px;
+        width              : 20px;
+        background-repeat  : no-repeat;
+        background-size    : auto;
+        opacity            : 0;
+        background-position: center center;
+
+
+        //     &::after {
+        //         content         : "";
+        //         display         : none;
+        //         width           : 10px;
+        //         height          : 10px;
+        //         background-color: #fff;
+        //         border-radius   : 50%;
+        //     }
+
+    }
+
+    input[type="checkbox"]:checked~.checkmark {
+        opacity: 1;
+    }
+}
+
+
+.repositories_Data {
+
+    .search_box {
+
+        .border.rounded-1 {
+            position    : relative;
+            padding-left: 0px;
+
+            img {
+                position: absolute;
+                left    : 10px;
+            }
+
+            .form-control {
+                padding-left: 35px;
+            }
+
+
+        }
+    }
+}
+
+.custom_warning_msg {
+    color           : #6f6f6f;
+    font-size       : 20px;
+    padding         : 55px 20px;
+    background-color: rgba(207, 226, 255, 0.42);
+    text-align      : center;
+    border-radius   : 10px;
+    width           : calc(100% - 30px);
+    margin          : 0 auto;
+
+
+    img {
+        width: 100px;
+    }
+
+    h3 {
+        color     : #131313;
+        font-size : 20px;
+        margin-top: 15px;
+    }
+
+}

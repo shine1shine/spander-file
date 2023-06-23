@@ -1,0 +1,18 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "prodClientsecret",
+      "environmentVariableName": "PROD_CLIENTSECRET"
+    },
+    {
+      "cloudFormationParameterName": "devClientsecret",
+      "environmentVariableName": "DEV_CLIENTSECRET"
+    },
+    {
+      "cloudFormationParameterName": "testClientsecret",
+      "environmentVariableName": "TEST_CLIENTSECRET"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+.design table {
+  font-family    : arial, sans-serif;
+  border-collapse: collapse;
+  width          : 80%;
+}
+
+.design td,
+.design th {
+  border    : 1px solid #dddddd;
+  text-align: left;
+  padding   : 15px;
+  color     : #fff;
+}
+
+.design a {
+  color: #aaaaff;
+}
+
+
+.top {
+  text-align: center;
+  color     : #fff;
+}
+
+.design {
+  background: #000;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.comp_title {
+   color: white;
+   margin-left: 10%;
+}

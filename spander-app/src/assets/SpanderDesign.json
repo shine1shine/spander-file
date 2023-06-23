@@ -1,0 +1,112 @@
+{
+    "comps_list":[
+        {
+            "name":"SpnLoginScreen.js",
+            "desc":"Page: login screen",
+            "path":["/login"]            
+        },
+        {
+            "name":"OAuth.js",
+            "desc":"Page: authorizing with Github",
+            "path":["/OAuth"]            
+        },
+        {
+            "name":"SpnRepositoriesScreen.js",
+            "desc":"Page: list all repositories in the account (or displays \"no repositories, please add repository\")",
+            "path":["/repositories"]
+        },
+        {
+            "name":"SpnAddRepositoryScreen.js",
+            "desc":"Page: add repository screen",
+            "path":["/addrepository"]
+
+        },
+        {
+            "name":"SpnRepositoryScreen.js",
+            "desc":"Page: specific repository screen (which displays the editable SpnTreeModelView)",
+            "path":["/repository/?id={repository_id}"],
+            "highlight": true
+        },
+        {
+            "name":"SpnSupportScreen.js",
+            "desc":"Page: Spander support page",
+            "path":["/support/contactus","/support/qa"]
+            
+        },
+        {
+            "name":"AppRoutes.js",
+            "desc":"Handles App routing and contains the route map (path to component). Called inside App.js"
+        },
+        {
+            "name":"SpnDropdownMenu.js",
+            "desc":"Dropdown menu to be displayed when certain items (e.g. support, user) are clicked in SpnTopBar",
+            "highlight": false
+        },
+        {
+            "name":"SpnRepositoriesScreen.js / SpnNoRepositoriesView",
+            "desc":"Inner component (defined in SpnRepositoriesScreen) which displays \"no repositories, add new repository\" view"
+        },
+        {
+            "name":"SpnTopBar.js",
+            "desc":"App top bar (displayed in all the relevant screens)"
+        },
+        {
+            "name":"SpnTreeModelView.js",
+            "desc":"Spander model view container (contains the tree view and the CLI view)"
+            
+        },
+        {
+            "name":"SpnTreeView.js",
+            "desc":"Spander project requirements tree view",
+            "methods": [
+              { "name":"onAddNode(uniqueIndex)",
+                "desc":"Callback function for the '+' add node button click event",
+                "highlight": true  
+              },
+              { "name":"setTree(newTreeNodes)",
+                "desc":"Sets a new JSON tree sturcture to the treeNodes",
+                "highlight": true  
+              },
+              {
+                "name":"traverseTree(node,callback)",
+                "desc":"Recursive function that traverses (loops) throygh all the nodes in the tree and sends each node to the custom callback function"
+               
+                
+              },
+              {
+                "name":"renderTree(treeNode,level)",
+                "desc":"Recursive function which renders the whole tree model diagram"
+                
+                
+              },
+              {
+                "name":"onSetNodeText(uniqueIndex)",
+                "desc":"Upon node click this callback opens an Edit Text Box with 'Done' button to set the text for a the specific node",
+                "highlight": true
+                
+              }
+
+            ],
+            "highlight": true
+        },
+        {
+            "name":"SpnCLIView.js",
+            "desc":"Spander CLI editor text box view"
+        },
+        {
+            "name":"SpnRepositoryPreviewView.js",
+            "desc":"Repository preview container (displayed in SpnRepositoriesScreen)"
+        },
+        {
+            "name":"SpnReqDescriptionView.js",
+            "desc":"Requirement description view (displayed in the SpnRepositoryScreen)"
+           
+
+        },
+        {
+            "name":"SpnRepositoryMembers.js",
+            "desc":"Displays members of a specific repository (displayed in SpnRepositoryScreen)"
+            
+        }
+       ]
+}
